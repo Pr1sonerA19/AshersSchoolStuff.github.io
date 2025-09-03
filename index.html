@@ -4,11 +4,17 @@
   <title>Alert Example</title>
 </head>
 <body>
-  <button onclick="showAlert()">Click me</button>
+  <button onclick="loginPrompt()">Click me</button>
 
   <script>
-    function showAlert() {
-      alert("You clicked the button!");
+    let person = prompt("Please enter your Username", "Testing123");
+    function loginPrompt() {
+      if(person != "Testing123") {
+        window.print();
+      }
+      else if(person == "Testing123"){
+        alert("Correct");
+      }
     }
   </script>
 </body>
