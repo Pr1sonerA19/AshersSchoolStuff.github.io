@@ -4,13 +4,12 @@
   <title>Alert Example</title>
 </head>
 <body>
-  <button onclick="loginPrompt()">Click me</button>
-
   <script>
     let person = prompt("Please enter your Username", "Testing123");
+    loginPrompt();
     function loginPrompt() {
       if(person != "Testing123") {
-        window.print();
+        alert("Incorrect");
       }
       else if(person == "Testing123"){
         alert("Correct");
