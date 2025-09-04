@@ -1,6 +1,6 @@
 .Button1 {
   float: left;
-  --size: 50px;
+  --size: 75px;
   cursor:pointer;
   height: var(--size);
   width: var(--size);
