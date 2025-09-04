@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Alert Example</title>
-</head>
-<body>
-  <script>
-    let person = prompt("Please enter your Username", "Testing123");
-    loginPrompt();
-    function loginPrompt() {
-      if(person != "Testing123") {
-        alert("Incorrect");
-      }
-      else if(person == "Testing123"){
-        alert("Correct");
-      }
-    }
-  </script>
-</body>
+  <head>
+    <script src="jquery.js"></script>
+    <script>
+      $(function(){
+        $("#includedContent").load("buttons.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="includedContent">
+    </div>
+  </body>
 </htmL>
